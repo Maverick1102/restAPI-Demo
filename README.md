@@ -13,7 +13,7 @@ REST APIs communicate via HTTP requests to perform standard database functions l
 ***Demonstration***
 
 **Goal**
-
+So the goal is simple. Just build a restAPI system for a given company that has a server room. Due to the high rate of hackers using social engineering for malice intentions, this system is meant to limit who can and cannot get into the server room. Each employee will have a NFC Card which will contain their First Name, Last Name and Employee Number. If employee does not have the needed position to enter the room, the system will say so. If an outsider tries to get in with a fake ID or something an error message will be raised and a security breach will be logged leading to security detaining the individual for further investigation. The IT Admin will be able to change the data in the databse according who is permitted to enter.
 
 **Requirements**
 1) [Windows Operating System](https://www.microsoft.com/software-download/windows11)
@@ -78,3 +78,56 @@ Make sure the clock in your VM is set properly to your real timezone.
 ![](12.png)
 
 11) Now let's begin the process ((:
+
+
+Demo 
+
+1) So this gonna be our database from where we get the information we need. You can change or update it according to your preference. 
+
+![](db1.png)
+
+Usually a backend database must be used but like I said earlier this just for knowledge purposes. Using a proper database is gonna massively complicate stuff.
+
+I) The top portion of the code is the header. The header is what always carries the Authentication Data.
+
+![](header.png)
+
+II) The below portion is body. It usally contains miscellaneous data.
+
+![](body.png)
+
+(FYI, you have to manually enter the details into Postman.)
+
+2) Now for the GET request : 
+
+![](get.png)
+
+Here is where the admin/security personnel will be able to determine whether the individual is an imposter or actual employee. 
+
+![](header.png)
+
+![](bod.png)
+
+The header and body contain the needed deatils so an alert wont be raised.
+
+Given the individual is an employee but doesnt have the needed security clearence, this will be the output : 
+
+![](invalid.png)
+
+Given the person is a someone who's not meant to be there the output will seem like this :
+
+![](fname.png)
+
+Invalid First Name
+
+![](lname.png)
+
+Invalid Last Name
+
+![](ssngg.png)
+
+Invalid Employee Number
+
+This will the raise an alert which will lead to the individual not being able to execute their intentions. 
+
+As we can see in the code and pictures, numerals(AKA status codes) of "200, 401, 404, 501" each carry a given meaning. You can learn more about it [here](https://en.wikipedia.org/wiki/List_of_HTTP_status_codes).
