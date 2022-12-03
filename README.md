@@ -54,7 +54,7 @@ So the goal is simple. Just build a restAPI system for a given company that has 
 
 ![](8.png)
 
-***IF YOU ENCOUNTER THIS ERROR, GIVEN YOU'RE RUNNING THIS ON A VIRTUAL MACHINE : ***
+***IF YOU ENCOUNTER THIS ERROR, GIVEN YOU'RE RUNNING THIS ON A VIRTUAL MACHINE :***
 
 ![](9.png)
 
