@@ -79,7 +79,6 @@ Make sure the clock in your VM is set properly to your real timezone.
 
 11) Now let's begin the process ((:
 
-
 Demo 
 
 1) So this gonna be our database from where we get the information we need. You can change or update it according to your preference. 
@@ -131,3 +130,66 @@ Invalid Employee Number
 This will the raise an alert which will lead to the individual not being able to execute their intentions. 
 
 As we can see in the code and pictures, numerals(AKA status codes) of "200, 401, 404, 501" each carry a given meaning. You can learn more about it [here](https://en.wikipedia.org/wiki/List_of_HTTP_status_codes).
+
+3) Now for the POST request :
+
+![](post.png)
+
+POST is usually used to create/send some kind of data on the server.
+
+I) The IT Admin will add in the details regarding the new employees :
+
+![](post1.png)
+
+Updated results :
+
+![](post2.png)
+
+II) There is no limit for adding employees :
+
+![](post3.png)
+
+Updated results :
+
+![](post4.png)
+
+So it's safe to it's techically impossible to add in an attacker details(unless well the server is hacked :P) without the being the IT Admin.
+
+**Like I told earlier, there will be a flaw in this system where everytime we save/restart the code, the new data will be deleted. Only the database we created in the code will exist. Employees, manaully adding through POSTMAN will not be there.**
+
+Restrated/saved program :
+
+![](post5.png)
+
+Updated POST request :
+
+![](post6.png)
+
+Updated results :
+
+![](post7.png)
+
+**There is sadly no sign of Johnny Boii :((**
+
+4) Now the PUT Request : 
+
+PUT request just means updating the deatils of a given data.
+
+![](put.png)
+
+In this case let's say someone of like a "CEO" suddenly wants to spy on his organizations security. So he becomes a cleaner and tells the IT Admin to update his credentials in the system. This is how the events will unfold :
+
+I) The IT Admin will get the CEO's credentials :
+
+![](put2.png)
+
+II) Then he will update the position located in the body section (this is just for example purposes, **NEVER PUT AUTHORIZATION DATA IN THE BODY**) :
+
+![](put3.png)
+
+Upon sending the request, we can now see that the output has updated the CEO to a cleaner.
+
+5) Lastly, the DELETE Request :
+
+
+
