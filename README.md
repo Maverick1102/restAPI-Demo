@@ -10,8 +10,6 @@ Its an application programming interface (API or web API) that conforms to the c
 **How restAPI's work**
 REST APIs communicate via HTTP requests to perform standard database functions like creating, reading, updating, and deleting records (also known as CRUD) within a resource. For example, a REST API would use a GET request to retrieve a record, a POST request to create one, a PUT request to update a record, and a DELETE request to delete one. All HTTP methods can be used in API calls. A well-designed REST API is similar to a website running in a web browser with built-in HTTP functionality.
 
-***Demonstration***
-
 **Goal**
 So the goal is simple. Just build a restAPI system for a given company that has a server room. Due to the high rate of hackers using social engineering for malice intentions, this system is meant to limit who can and cannot get into the server room. Each employee will have a NFC Card which will contain their First Name, Last Name and Employee Number. If employee does not have the needed position to enter the room, the system will say so. If an outsider tries to get in with a fake ID or something an error message will be raised and a security breach will be logged leading to security detaining the individual for further investigation. The IT Admin will be able to change the data in the databse according who is permitted to enter.
 
@@ -73,7 +71,7 @@ Make sure the clock in your VM is set properly to your real timezone.
 "**Set-ExecutionPolicy Unrestricted**" : Beginning in PowerShell 6.0, this is the default execution policy for non-Windows computers and can't be changed.
 "**npm install nodemon**" : Install "**Nodemon**" that helps develop node.js based applications by automatically restarting the node application when file changes in the directory are detected.
 
-10) Finally create a file for the program. You can also just import the 23498092348329483249 file from this repo :
+10) Finally create a file for the program. You can also just import the ![code](rehatszzz.js) file from this repo :
 
 ![](12.png)
 
@@ -155,7 +153,7 @@ Updated results :
 
 So it's safe to it's techically impossible to add in an attacker details(unless well the server is hacked :P) without the being the IT Admin.
 
-**Like I told earlier, there will be a flaw in this system where everytime we save/restart the code, the new data will be deleted. Only the database we created in the code will exist. Employees, manaully adding through POSTMAN will not be there.**
+**Like I told earlier, there will be a flaw in this system where everytime we save/restart the code, the new data will be deleted. Only the database we created in the code will exist. Employees, manually adding through POSTMAN will not be there.**
 
 Restrated/saved program :
 
@@ -197,6 +195,34 @@ This literally means what it says. To delete data.
 
 So here goes :
 
-I) 
+I) The admin searches if the employee exists. 
+
+![](d2.png)
+
+Non Existent Employee
+
+![](d3.png)
+
+Existent Employee
+
+II) Send the request to DELETE the employee details :
+
+![](d4.png)
+
+Output upon deletion of employee.
+
+**Like I told earlier, there will be a flaw in this system where everytime we save/restart the code, the data will return. This is because the database we created in the code still exists. Employees, manually deleted through POSTMAN will still be there.**
+
+Restrated/saved program :
+
+![](d5.png)
+
+Restart results :
+
+![](d6.png)
+
+**Long Live John Boii ((:**
+
+So thats it. Hope you all learned a thing or two. Hope this helps ((:
 
 
