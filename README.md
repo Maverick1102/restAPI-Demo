@@ -191,5 +191,12 @@ Upon sending the request, we can now see that the output has updated the CEO to 
 
 5) Lastly, the DELETE Request :
 
+This literally means what it says. To delete data.
+
+![](d.png)
+
+So here goes :
+
+I) 
 
 
